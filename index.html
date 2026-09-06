@@ -6,7 +6,7 @@
   <title>TunnelMotor.net — The End of the SD40T-2</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Rajdhani:wght@600;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #1c1c1c;
@@ -33,9 +33,11 @@
     }
 
     .speed {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.04em;
+      font-style: italic;
     }
 
     .container {
@@ -46,26 +48,24 @@
 
     header {
       border-bottom: 1px solid var(--border);
-      padding: 1.25rem 0;
-      margin-bottom: 3rem;
+      padding: 1.5rem 0;
+      margin-bottom: 2.5rem;
+      text-align: center;
     }
 
     .logo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.5rem;
-      letter-spacing: 0.1em;
-      color: var(--text);
-      text-decoration: none;
-    }
-
-    .logo span {
-      color: var(--orange);
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
     }
 
     h1 {
-      font-size: clamp(2.4rem, 7vw, 3.6rem);
-      line-height: 1;
-      margin-bottom: 0.75rem;
+      font-size: clamp(2.4rem, 7vw, 3.5rem);
+      line-height: 1.05;
+      margin-bottom: 0.6rem;
+      text-align: center;
     }
 
     h1 span {
@@ -74,12 +74,13 @@
 
     .subtitle {
       font-family: 'Rajdhani', sans-serif;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 0.95rem;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--orange);
       margin-bottom: 2.5rem;
+      text-align: center;
     }
 
     p {
@@ -101,32 +102,13 @@
       color: var(--text);
     }
 
-    .btn {
-      display: inline-block;
-      margin-top: 1.5rem;
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 700;
-      font-size: 0.9rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 0.75rem 1.75rem;
-      background: var(--orange);
-      color: #111;
-      text-decoration: none;
-      border-radius: 2px;
-      transition: background 0.2s ease;
-    }
-
-    .btn:hover {
-      background: #ff7a2e;
-    }
-
     footer {
       border-top: 1px solid var(--border);
       padding: 1.5rem 0;
       margin-top: 3rem;
       font-size: 0.85rem;
       color: var(--muted);
+      text-align: center;
     }
   </style>
 </head>
@@ -134,7 +116,11 @@
 
   <div class="container">
     <header>
-      <a href="/" class="logo">TUNNEL<span>MOTOR</span>.NET</a>
+      <img 
+        src="file_000000004ef481f5878678eb40c24246.png" 
+        alt="Tunnelmotor.net" 
+        class="logo"
+      >
     </header>
 
     <h1 class="speed">The End of the<br><span>SD40T-2</span></h1>
@@ -164,8 +150,6 @@
       and spent their lives conquering the grades.
     </p>
 
-    <a href="#" class="btn">Back to Home</a>
-
     <footer>
       Documenting the SD40T-2 Tunnel Motors
     </footer>
@@ -173,3 +157,4 @@
 
 </body>
 </html>
+
