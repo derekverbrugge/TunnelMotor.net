@@ -112,18 +112,19 @@
       color: var(--muted);
       text-align: center;
     }
-  </style>
+  a,a:visited,a:hover,a:active,a:focus{text-decoration:none!important}#site-header,#site-footer{display:contents}
+body{min-height:100vh}.container{min-height:100vh;display:flex;flex-direction:column}footer{margin-top:auto}</style>
 </head>
-<body>
+<body id="top">
 
   <div class="container">
-    <header>
+    <div id="site-header"><header>
       <a href="index.html#top" aria-label="TunnelMotor home"><img 
         src="tmnet.png" 
         alt="Tunnelmotor.net" 
         class="logo"
       ></a>
-    </header>
+    </header></div>
 
     <h1 class="speed">The End of the<br><span>SD40T-2</span></h1>
     <p class="subtitle">Southern Pacific · Rio Grande</p>
@@ -152,11 +153,11 @@
       and spent their lives conquering the grades.
     </p>
 
-    <footer>
-      <a href="#" style="color:inherit;text-decoration:none">Documenting the SD40T-2 Tunnel Motors</a>
-    </footer>
+    <div id="site-footer"><footer>
+      <a href="index.html#top" style="color:inherit;text-decoration:none">Documenting the SD40T-2 Tunnel Motors</a>
+    <span>© <span data-year></span> TunnelMotor.net</span></footer></div>
   </div>
 
-</body>
+<script>Promise.all([["site-header","header.html"],["site-footer","footer.html"]].map(async ([id,path])=>{try{const r=await fetch(path);if(r.ok)document.getElementById(id).innerHTML=await r.text()}catch{}})).then(()=>document.querySelectorAll("[data-year]").forEach(e=>e.textContent=new Date().getFullYear()));</script></body>
 </html>
 
